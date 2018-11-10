@@ -10,6 +10,7 @@ module.exports = {
     async store(req,res) {
         const tweet = await Tweet.create(req.body)
 
+        //estudar sobre socket io
         req.io.emit('tweet',tweet)
 
         return res.json(tweet)
