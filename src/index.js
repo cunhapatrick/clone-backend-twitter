@@ -8,7 +8,7 @@ const server = require('http').Server(app)
 
 const io = require('socket.io')(server)
 
-mongoose.connect('mongodb://goweek:goweek123@localhost:27017/goweek-backend',{
+mongoose.connect('mongodb://root:root123@ds227674.mlab.com:27674/clone-twitter', {
     useNewUrlParser: true
 })
 
